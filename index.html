@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./scripts/scripts.js"></script>
+</head>
+<body>
+    <h1 id = "title">Welcome to my party!</h1>
+    <h2>But first, let's do a quick validation!</h2>
+    <form id="ageValidation">
+        <label> Please enter your name: <input
+            id = "name"  
+            type="text"
+            name="Name"
+            minlength="2"
+            placeholder="Enter your name"
+            pattern="^[A-Za-z]*$"
+            title="Please start with a capital letter and only use your first name"
+            required /></label><br>
+        <label>Please enter your age: <input
+            id = "age"
+            type="number"
+            required
+            /></label><br>
+        <input type="submit">
+    </form>
+
+    <h1 id="message"><span id = "name"></span>! Welcome to my page!</h1>
+</body>
+</html>
