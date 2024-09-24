@@ -1,18 +1,26 @@
-let nameNode = document.getElementById('name')
+let form = document.getElementById('ageValidation');
+let nameNode = document.getElementById('name');
+let ageNode = document.getElementById('age');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    validateAge();
+});
 
 function validateAge() {
 
-let ageNode = document.getElementById('age');
-let message = document.getElementsById(`message`);
+let message = document.getElementById(`message`);
 
 let age = ageNode.value;
-console.log(ageNode.textContent)
+console.log(ageNode.value)
 if (age < 18) {
-    alert("YOUR TOO YOUNG!")
-    age.focus();
-    message.textContent = `${nameNode.textContent}, your too young!`
+    ageNode.focus();
+    message.textContent = `${nameNode.value}, you're too young! You must be 18 or older!`
+} else if (age > 100) {
+    message.textContent = `${nameNode.value}, congrats on being over 100, but you're too old!`
 } else {
-    message.textContent = `${nameNode.textContent}, welcome! Please proceeed to the next page!`
+    message.textContent = `${nameNode.value}, welcome! Please proceed to the next page!`
+    ageNode.focus();
 }
 
 }
