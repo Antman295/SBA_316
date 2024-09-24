@@ -4,6 +4,6 @@ if(confirmation) {
     alert("You may proceed.");
 } else {
     alert("You're too young! Please go back to the main page!");
-    window.location.href = "index.html"
+    window.location.href = "../index.html"
 }
 
