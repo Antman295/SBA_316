@@ -16,3 +16,5 @@ This was done with the use of JavaScript and the code was created inside Microso
 
 ## Acknowledgements
 [Code snippit to delete the first child from a list] https://www.w3schools.com/jsref/met_node_removechild.asp
+
+[Explination of the "submitter" property that I used] https://developer.mozilla.org/en-US/docs/Web/API/SubmitEvent/submitter
