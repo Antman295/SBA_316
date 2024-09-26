@@ -10,6 +10,8 @@ if(confirmation) {
 const input = document.getElementById('nameInput');
 const addName = document.getElementById('addButton');
 const removeName = document.getElementById('removeButton');
+const removeFirst = document.getElementById('removeFirstItem');
+const removeLast = document.getElementById('removeLastItem');
 const nameList = document.getElementById('list');
 
 addName.addEventListener('click', () => {
@@ -45,3 +47,18 @@ removeName.addEventListener('click', () => {
     }
 })
 
+removeFirst.addEventListener('click', () => {
+    if (nameList.hasChildNodes()) {
+    nameList.removeChild(list.firstChild);
+    } else {
+        alert("The list is empty!")
+    }
+})
+
+removeLast.addEventListener('click', () => {
+    if (nameList.hasChildNodes()) {
+    nameList.removeChild(list.lastChild);
+    } else {
+        alert("The list is empty!")
+    }
+})

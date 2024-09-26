@@ -13,3 +13,6 @@ This project utilizes the Document Object Model (DOM) to create a functional web
 This was done with the use of JavaScript and the code was created inside Microsoft Visual Studio Code. Everything was submitted to a GitHub Repository.
 
 [Link to my Github] https://github.com/Antman295
+
+## Acknowledgements
+[Code snippit to delete the first child from a list] https://www.w3schools.com/jsref/met_node_removechild.asp
