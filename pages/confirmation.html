@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script defer src="/scripts/confirmation.js"></script>
+</head>
+<body>
+    <h1>You're almost done. Please provide your email and please confirm one last time if you're going!</h1>
+    <form id="email">
+        <label>Enter your email here: <input
+        id="email"
+        type="email"
+        required/></label><br>
+        <input type="submit" value="I'm Going" id="confirmGoing">
+        <input type="submit" value="I'm Not Going" id="confirmNotGoing">
+    </form>
+
+    <h1>Thank You!</h1>
+
+    <h1 id="message"><span id = "name"></span></h1>
+</body>
+</html>
