@@ -33,7 +33,6 @@ removeName.addEventListener('click', () => {
     if (name) {
         const listOfNames = nameList.querySelectorAll('li');
 
-
         listOfNames.forEach((item) => {
             if (item.textContent === name) {
                 nameList.removeChild(item);
