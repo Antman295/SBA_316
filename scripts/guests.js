@@ -48,7 +48,7 @@ removeName.addEventListener('click', () => {
 
         input.value = '';
     } else {
-        alert("Please enter a name that's on the list to delete it.")
+        alert("Please enter a name that's on the list to delete it.");
     }
 })
 
@@ -57,7 +57,7 @@ removeFirst.addEventListener('click', () => {
     if (nameList.hasChildNodes()) {
     nameList.removeChild(list.firstChild);
     } else {
-        alert("The list is empty!")
+        alert("The list is empty!");
     }
 })
 
@@ -66,6 +66,6 @@ removeLast.addEventListener('click', () => {
     if (nameList.hasChildNodes()) {
     nameList.removeChild(list.lastChild);
     } else {
-        alert("The list is empty!")
+        alert("The list is empty!");
     }
 })
